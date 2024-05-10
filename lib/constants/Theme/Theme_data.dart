@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
-final ThemeData appThemeData = ThemeData(
+final ThemeData NeumorphicThemeData = ThemeData(
+  
   primaryColor: Colors.blueAccent,
-  fontFamily: 'Georgia',
-  textTheme: TextTheme()
- 
+  
 );

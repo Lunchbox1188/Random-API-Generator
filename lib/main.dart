@@ -9,7 +9,9 @@ void main() {
   runApp(GetMaterialApp(
     debugShowCheckedModeBanner: false,
     initialRoute: Routes.SPLASH,
-    theme: appThemeData,
+    themeMode: ThemeMode.dark,
+    theme: NeumorphicThemeData,
+
     // defaultTransition: Transition.fade,
     // initialBinding: SplashBinding(),
     getPages: AppPages.pages,
