@@ -16,27 +16,12 @@ class _SplashPageState extends State<SplashPage> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.white,
-      child: Column(children: <Widget>[
-        Padding(
-          padding: EdgeInsets.only(top: 200, bottom: 10),
-          child: Container(
-            height: 200,
-            width: 200,
-/*decoration: BoxDecoration(
-image: DecorationImage(
-image: AssetImage('images/img_splash.png'),
-fit: BoxFit.fill)),*/
-          ),
-        ),
-        Text(
-          'CONNECT',
-          style: TextStyle(
-              color: Colors.greenAccent,
-              fontSize: 20,
-              decoration: TextDecoration.none),
-        ),
-      ]),
+      child: Center(
+        child: Text('Loading...'),
+      ),
+      decoration: BoxDecoration(
+        image: DecorationImage(image: AssetImage('assets/images/splash.jpg'))
+      ),
     );
   }
 }
