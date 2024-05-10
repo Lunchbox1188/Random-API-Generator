@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'routes/pages.dart';
 import 'screens/splash.dart';
 
 void main() {
