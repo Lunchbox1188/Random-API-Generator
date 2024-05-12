@@ -9,20 +9,31 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          'Home Page',
+    return Stack(
+      children: [
+        CustomBackground(),
+        Scaffold(
+          appBar: AppBar(),
+          body: Center(
+            child: Column(
+              children: [
+                CustomContainerBuild(
+                  height: 200,
+                  text: 'Select from a catalogue of random dogs.',
+                  child: Padding(
+                    padding: const EdgeInsets.only(
+                        top: 50, left: 10, right: 10, bottom: 10),
+                    child: CustomButton(
+                      onPressed: () {},
+                      icon: Icons.pets,
+                    ),
+                  ),
+                )
+              ],
+            ),
+          ),
         ),
-      ),
-      body: Center(
-        child: Column(
-          children: [
-            Text('The Random Dog Generator', 
-            )
-          ],
-        ),
-      ),
+      ],
     );
   }
 }
