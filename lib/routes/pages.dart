@@ -11,7 +11,7 @@ abstract class AppPages {
       page: () => HomePage(),
     ),
     GetPage(
-      name: Routes.HOME,
+      name: Routes.SPLASH,
       page: () => SplashPage(),
     ),
   ];

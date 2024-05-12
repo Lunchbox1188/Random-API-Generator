@@ -2,14 +2,22 @@ import 'package:flutter/material.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 
 class CustomButton extends StatelessWidget {
-  const CustomButton({super.key});
+  final VoidCallback onPressed;
+  final IconData icon;
+
+  const CustomButton({
+    super.key,
+    required this.onPressed,
+    required this.icon,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      floatingActionButton: NeumorphicFloatingActionButton(
-        child: Icon(Icons.pets),
-        onPressed: () {},
+    return Transform.scale(
+      scale: 1.0,
+      child: NeumorphicFloatingActionButton(
+        child: Icon(icon),
+        onPressed: onPressed,
       ),
     );
   }
