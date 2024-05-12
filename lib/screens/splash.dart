@@ -20,8 +20,8 @@ class _SplashPageState extends State<SplashPage> {
         child: Text('Loading...'),
       ),
       decoration: BoxDecoration(
-        image: DecorationImage(image: AssetImage('assets/images/splash.jpg'))
-      ),
+          image:
+              DecorationImage(image: AssetImage('assets/images/splash.jpg'))),
     );
   }
 }

@@ -3,7 +3,6 @@ import 'package:get/get.dart';
 
 import 'Theme/Theme_data.dart';
 import 'routes/pages.dart';
-import 'screens/splash.dart';
 
 void main() {
   runApp(GetMaterialApp(
@@ -13,6 +12,6 @@ void main() {
     // defaultTransition: Transition.fade,
     // initialBinding: SplashBinding(),
     getPages: AppPages.pages,
-    home: SplashPage(),
+    // home: SplashPage(),
   ));
 }
