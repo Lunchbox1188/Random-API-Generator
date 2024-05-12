@@ -19,6 +19,7 @@ class HomePage extends StatelessWidget {
               children: [
                 CustomContainerBuild(
                   height: 200,
+                  
                   text: 'Select from a catalogue of random dogs.',
                   child: Padding(
                     padding: const EdgeInsets.only(

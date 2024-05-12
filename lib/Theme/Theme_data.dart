@@ -13,8 +13,19 @@ final ThemeData appThemeData = ThemeData(
 TextTheme _buildTextTheme() {
   return TextTheme(
     bodyLarge: TextStyle(
-        color: secondaryTextColor,
-        fontSize: 30,
-        fontFamily: GoogleFonts.merriweather().fontFamily),
+      color: secondaryTextColor,
+      fontSize: 30,
+      fontFamily: GoogleFonts.merriweather().fontFamily,
+    ),
+    bodyMedium: TextStyle(
+      color: secondaryTextColor,
+      fontSize: 20,
+      fontFamily: GoogleFonts.merriweather().fontFamily,
+    ),
+    bodySmall: TextStyle(
+      color: secondaryTextColor,
+      fontSize: 10,
+      fontFamily: GoogleFonts.merriweather().fontFamily,
+    ),
   );
 }

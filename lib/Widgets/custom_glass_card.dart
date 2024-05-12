@@ -1,24 +1,25 @@
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class CustomContainerBuild extends StatelessWidget {
   const CustomContainerBuild({
     super.key,
     required this.text,
     this.height,
+    this.width,
     this.child,
   });
 
   final String text;
   final double? height;
   final Widget? child;
+  final double? width;
 
   @override
   Widget build(BuildContext context) {
     return Container(
       height: height,
+      width: width,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15),
         color: Colors.white.withOpacity(0.2),
@@ -45,10 +46,7 @@ class CustomContainerBuild extends StatelessWidget {
                 color: Colors.grey.withOpacity(0.1),
                 child: Text(
                   text,
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontFamily: GoogleFonts.merriweather().fontFamily,
-                  ),
+                  style: Theme.of(context).textTheme.bodyLarge,
                 ),
               ),
             ],
