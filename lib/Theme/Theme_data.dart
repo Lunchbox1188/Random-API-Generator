@@ -4,7 +4,7 @@ import 'package:random_dog_api/constants/colors.dart';
 
 final ThemeData appThemeData = ThemeData(
   primaryColor: Colors.blueAccent,
-  fontFamily: 'Georgia',
+  fontFamily: GoogleFonts.merriweather().fontFamily,
   textTheme: _buildTextTheme(),
   scaffoldBackgroundColor: Colors.transparent,
   appBarTheme: AppBarTheme(backgroundColor: Colors.transparent),
