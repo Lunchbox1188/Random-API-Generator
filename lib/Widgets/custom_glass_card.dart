@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class CustomContainer extends StatelessWidget {
-  const CustomContainer({
+class CustomContainerBuild extends StatelessWidget {
+  const CustomContainerBuild({
     super.key,
     required this.text,
     required this.onPressed,
