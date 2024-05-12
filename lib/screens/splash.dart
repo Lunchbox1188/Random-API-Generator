@@ -11,22 +11,32 @@ class _SplashPageState extends State<SplashPage> {
   @override
   void initState() {
     super.initState();
-    // Future.delayed(Duration(seconds: 2), () => Get.offNamed('/home'));
+    Future.delayed(Duration(seconds: 4), () => Get.offNamed('/home'));
   }
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(
-        child: Text('Loading...', style: TextStyle(), ),
-        heightFactor: 50,
-        widthFactor: 150,
-      ),
-      decoration: BoxDecoration(
-        image: DecorationImage(
-          image: newSplashImage,
+    return Stack(
+      children: [
+        Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: newSplashImage,
+            ),
+          ),
         ),
-      ),
+        Positioned(
+          top: 100.0,
+          left: 0.0,
+          right: 0.0,
+          child: Center(
+            child: Text(
+              'Loading...',
+              style: Theme.of(context).textTheme.bodyLarge,
+            ),
+          ),
+        ),
+      ],
     );
   }
 }
