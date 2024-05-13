@@ -13,23 +13,20 @@ class HomePage extends StatelessWidget {
       children: [
         CustomBackground(),
         Scaffold(
-          appBar: AppBar(),
           body: Center(
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 CustomContainerBuild(
-                  height: 200,
-                  
                   text: 'Select from a catalogue of random dogs.',
-                  child: Padding(
-                    padding: const EdgeInsets.only(
-                        top: 50, left: 10, right: 10, bottom: 10),
-                    child: CustomButton(
-                      onPressed: () {},
-                      icon: Icons.pets,
-                    ),
+                  height: 300,
+                  width: 400,
+                  
+                  child: CustomButton(
+                    icon: Icons.pets,
+                    onPressed: () {},
                   ),
-                )
+                ),
               ],
             ),
           ),

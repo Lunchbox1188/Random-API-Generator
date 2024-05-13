@@ -1,5 +1,6 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:random_dog_api/Widgets/custom_button.dart';
 
 class CustomContainerBuild extends StatelessWidget {
   const CustomContainerBuild({
@@ -7,17 +8,18 @@ class CustomContainerBuild extends StatelessWidget {
     required this.text,
     this.height,
     this.width,
-    this.child,
+    required this.child,
   });
 
   final String text;
   final double? height;
-  final Widget? child;
   final double? width;
+  final Widget child;
 
   @override
   Widget build(BuildContext context) {
     return Container(
+      
       height: height,
       width: width,
       decoration: BoxDecoration(

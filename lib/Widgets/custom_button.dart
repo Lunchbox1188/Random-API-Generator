@@ -14,8 +14,8 @@ class CustomButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Transform.scale(
-      scale: 1.0,
-      child: NeumorphicFloatingActionButton(
+      scale: 2.0,
+      child: FloatingActionButton(
         child: Icon(icon),
         onPressed: onPressed,
       ),
